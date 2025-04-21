@@ -1,6 +1,4 @@
-# Secure_Password_Handling
-
-# Secure Password Storage Demonstration
+# Secure Password Storage 
 
 This project demonstrates the correct, secure way to handle user password storage using Python and the `passlib` library, contrasting it with common insecure methods. Understanding and implementing these practices is crucial for protecting user credentials.
 
