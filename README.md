@@ -1,5 +1,5 @@
 # Secure Password Storage Implementation
-Version: 1.0 Date: 04-20-2025 Linkedin: [https://github.com/mrlopez-ale/Secure-Password-Storage](https://www.linkedin.com/in/mr-lopeza/)
+Version: 1.0 Date: 04-20-2025 Linkedin: https://www.linkedin.com/in/mr-lopeza/
 1. Objective:
 Demonstrate the correct, secure method for storing user passwords using modern hashing techniques (specifically bcrypt via the passlib library).
 Highlight the importance of unique salts per user.
