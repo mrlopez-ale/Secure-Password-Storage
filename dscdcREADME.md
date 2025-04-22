@@ -1,42 +1,5 @@
-# Secure Password Storage Implementation
-Version: 1.0 Date: 04-20-2025 Source: https://github.com/mrlopez-ale/Secure-Password-Storage
-1. Objective:
-Demonstrate the correct, secure method for storing user passwords using modern hashing techniques (specifically bcrypt via the passlib library).
-Highlight the importance of unique salts per user.
-Contrast secure methods with common insecure practices like plaintext storage or using unsalted fast hashes (e.g., MD5).
-Provide a clear understanding of why hashing is the preferred method over encryption for password storage.
-2. Prerequisites & Setup:
-Environment: Python 3.x installed.
-Package Manager: pip (Python package installer) available.
-Required Library: passlib with the bcrypt backend.
-Installation Command: Open your terminal or command prompt and run:
-pip install "passlib[bcrypt]"
 
-
-Troubleshooting Note: bcrypt sometimes requires system build tools (like C compilers). If the installation fails, consult the bcrypt documentation specific to your operating system or try installing the components separately:
-pip install passlib bcrypt
-
-
-3. Procedure: Demonstration Script (secure_password_demo.py)
-(Note: This section describes how to use a demonstration script based on the provided information. The actual Python code for secure_password_demo.py should be obtained separately.)
-Purpose: This Python script simulates user registration and login to illustrate secure hashing and verification, alongside examples of insecure methods.
-Execution Steps:
-Ensure you have the secure_password_demo.py file.
-Navigate to the directory containing the file using your terminal or command prompt.
-Run the script using the Python interpreter:
-python secure_password_demo.py
-
-
-Expected Observations from Script Output:
-Secure Hashing: Observe the process of generating a bcrypt hash during the simulated registration.
-Hash Format: Note the structure of the stored bcrypt hash string. It typically includes markers for the algorithm ($2b$), the cost factor, the salt, and the resulting hash digest, all encoded together.
-Verification Success: See successful login validation when the correct password is provided.
-Verification Failure: See failed login validation when an incorrect password is provided.
-Insecure Examples: Observe demonstrations of plaintext storage and unsalted MD5 hashing, clearly showing why these are weak and easily compromised.
-4. Core Principles of Secure Password Hashing:
-A. Hashing (Not Encryption): The Cornerstone
-Hashing: A one-way cryptographic function transforming input (password) into a fixed-size, irreversible string (hash). It's computationally infeasible to get the original password from the hash.
-Encryption: A two-way process (encrypt/decrypt) requiring a key. Unsuitable for password storage due to the risk of key compromise exposing all passwords.
+(Note: This secti compromise exposing all passwords.
 Key Point: We store the hash of the password, never the password itself.
 B. Salting: Adding Uniqueness & Defeating Rainbow Tables
 Salt: A unique, random piece of data generated for each password before hashing.
