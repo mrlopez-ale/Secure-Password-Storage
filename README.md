@@ -1,23 +1,19 @@
-# Secure Password Storage Implementation
-Linkedin: https://www.linkedin.com/in/mr-lopeza/
-1. Objective:
+Playbook: Secure Password Storage Implementation
+Source: https://github.com/mrlopez-ale/Secure-Password-Storage
+Objective:
 Demonstrate the correct, secure method for storing user passwords using modern hashing techniques (specifically bcrypt via the passlib library).
 Highlight the importance of unique salts per user.
 Contrast secure methods with common insecure practices like plaintext storage or using unsalted fast hashes (e.g., MD5).
 Provide a clear understanding of why hashing is the preferred method over encryption for password storage.
-2. Prerequisites & Setup:
+1. Prerequisites & Setup:
 Environment: Python 3.x installed.
 Package Manager: pip (Python package installer) available.
 Required Library: passlib with the bcrypt backend.
 Installation Command: Open your terminal or command prompt and run:
 pip install "passlib[bcrypt]"
-
-
 Troubleshooting Note: bcrypt sometimes requires system build tools (like C compilers). If the installation fails, consult the bcrypt documentation specific to your operating system or try installing the components separately:
 pip install passlib bcrypt
-
-
-3. Procedure: Demonstration Script (secure_password_demo.py)
+4. Procedure: Demonstration Script (secure_password_demo.py)
 (Note: This section describes how to use a demonstration script based on the provided information. The actual Python code for secure_password_demo.py should be obtained separately.)
 Purpose: This Python script simulates user registration and login to illustrate secure hashing and verification, alongside examples of insecure methods.
 Execution Steps:
@@ -71,5 +67,7 @@ Impact: If the data store is breached, all user passwords are immediately expose
 Unsalted Fast Hashes (e.g., MD5, SHA1):
 Vulnerable to Rainbow Tables: No unique salt means identical passwords always produce the same hash, making them trivial to look up in precomputed tables.
 Too Fast: These algorithms execute extremely quickly, allowing attackers to test billions of password guesses per second on modern hardware, making brute-force feasible.
+
+
 8. Overall Conclusion:
 Protecting user passwords is paramount. Always use a strong, adaptive hashing algorithm like bcrypt or Argon2, ensuring each password hash uses a unique salt. passlib in Python provides an excellent and easy way to implement these best practices. Avoid plaintext storage and weak/fast hashing algorithms entirely.
