@@ -1,6 +1,6 @@
 # Playbook: Secure Password Storage Implementation
 
-**Source:** [https://github.com/mrlopez-ale/Secure-Password-Storage](https://github.com/mrlopez-ale/Secure-Password-Storage)
+**Source:** https://www.linkedin.com/in/mr-lopeza/
 
 ## Objective
 
