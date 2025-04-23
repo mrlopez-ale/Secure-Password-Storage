@@ -1,4 +1,4 @@
-# Playbook: Secure Password Storage Implementation - password a user would use to log into a website or application
+# Playbook: Secure Password Storage for Web & App User Logins
 
 **Source:** https://www.linkedin.com/in/mr-lopeza/
 
