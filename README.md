@@ -1,4 +1,4 @@
-# Playbook: Secure Password Storage for Web & App User Logins
+# Secure Password Storage for Web & App User Logins
 
 **Source:** https://www.linkedin.com/in/mr-lopeza/
 
